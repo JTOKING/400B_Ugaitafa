@@ -8,7 +8,6 @@ def Read(x): #defining the Read file as a function
     line1 = file.readline()
     label, value = line1.split()
     time = float(value)*u.Myr
-
     line2 = file.readline()
     label, value = line2.split()
     particle_num = float(value)
