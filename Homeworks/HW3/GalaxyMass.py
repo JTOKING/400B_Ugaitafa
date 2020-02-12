@@ -4,9 +4,9 @@ import astropy.units as u
 from ReadFile import Read #imports necessary info from ReadFile we made
 
 #define function that will return the total mass of any Galaxy
-def ComponentMass(PType, File):
+def ComponentMass(ReadFile, PType):
 
-    time, total, data = Read(File)  #reading the data we need from the ReadFile
+    time, total, data = Read(ReadFile)  #reading the data we need from the ReadFile
 
     index = np.where(data['type'] == PType)  #creates an array to store indexes of particles of desired PType
     

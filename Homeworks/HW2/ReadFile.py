@@ -1,9 +1,9 @@
 import numpy as np
 import astropy.units as u
 
-def Read(x): #defining the Read file as a function
+def Read(ReadFile): #defining the Read file as a function
 
-    file = open(x,'r')
+    file = open(ReadFile,'r')
 
     line1 = file.readline()
     label, value = line1.split()
